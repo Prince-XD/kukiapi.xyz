@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuki</title>
+    <meta name="description" content="Hello I'm Kuki">
+    <meta name="theme-color" content="#4effe2">
+    <link rel="stylesheet" href="style.css">
+    <link rel2="stylesheet" href="style2.css">
+    <script src="./particles.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="shortcut icon" href="./images/kuki.png"  type="image/x-icon">
+    <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <nav id="nav" class="nav">
+            <h1>Kuki<span style="color: var(--text-color); ">🙇‍♀</span></h1>
+            <ul>
+                <li><a id="link2" onClick="gotoa()">About</a></li>
+                <li><a id="link4" onclick="gotoc()">Contact</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="bars()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="navbar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a  onclick="closeNav(); gotoa()">About</a>
+ 
+                <a  onclick="closeNav(); gotoc()">Contact</a>
+        </div>
+    </header>
+    <!---Over!-->
+
+
+    <section class="main-content">
+        <div id="particles-js"></div>
+        <div>
+            <img style="width: 40%;" src="./images/kuki.png" alt="">
+            <h1 class="name">Hello! I Am Kuki.</h1>
+                <br>
+            <h3 >I'm a <span  id="typing-stuff"></h3>
+        </div>
+        
+    </section>
+
+    <section class="main-content" id="about">
+
+        <div class="about"> 
+
+            <p>
+                ABOUT
+                <br><br>
+            </p>
+            <p>
+                Kuki is an advanced AI chatbot that has the ability to Multiple  language, contextualize messages, and respond in kind. She will adapt to conversations with multiple users; roleplaying, consolidating, arguing, and having fun, bringing a lot of personality and a unique sense of humor~ Kuki is designed to be the chatbot/friend you want her to be! 
+            </p>
+            <br><br>
+            <p>
+                Developed By <a class="link-about" href="https://t.me/pranavajay">MoeZilla.</a>
+            </p>        
+        </div>
+ 
+    </section>
+
+
+    <section class="main-content" id="about">
+
+        <div class="about"> 
+
+            <p>
+               Make sure you follow the <a class="link-about" href="https://github.com/moezilla">my github</a> for requesting more features and adding responses ✌🏻.
+            </p>
+                    
+        </div>
+        
+    </section>
+
+
+    <section class="main-content" id="contact">
+        
+        <div class="contact-container">
+            <h1><i class="fa fa-phone" style="padding-right: 10px; color: var(--light-text-color);"></i>Contact Me</h1>
+            <p>
+                Contact Me Forms <a style="text-decoration: none; color:#4eedff;" href="mailto:pranavajay594@gamail.com">My Email</a> 
+            </p>
+            <form onsubmit="sendEmail()">
+                <div class="name-email">
+                    <input class="input email" type="email" id="email" placeholder="Your Email" id="">
+                    <input class="input" type="text"  placeholder="Your Name" name="" id="">                   
+                </div>
+                <input class="input long" type="text" id="sub" name="" placeholder="Subject" id=""><br>
+                <textarea class="input long textarea" id="message" type="text" name="" placeholder="Message" id=""></textarea><br>
+                <button class="send" type="submit" ><i class="fa fa-send"></i> Send Message</button>
+            </form>
+        </div>
+        
+    </section>
+    <button class="source-btn" onclick="location.href='https://kukiapi.xyz/api/home';"> Kuki Api </button>
+	<!-- partial -->
+
+</body>
+
+
+<script src="./main.js"></script>
+</html>
